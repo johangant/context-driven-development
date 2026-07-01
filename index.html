@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Context Driven Development helps software teams make better technical decisions by starting with the realities of their product, users, and constraints.">
+  <title>Context Driven Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#17201d',
+            paper: '#f4f1e8',
+            moss: '#315c4b',
+            lime: '#d9f99d',
+            coral: '#ff7657'
+          },
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+            mono: ['DM Mono', 'monospace']
+          },
+          boxShadow: {
+            card: '0 18px 60px rgba(23, 32, 29, 0.10)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-paper font-sans text-ink antialiased">
+  <header class="relative z-20 border-b border-ink/10">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10" aria-label="Main navigation">
+      <a href="#top" class="flex items-center gap-3 font-extrabold tracking-tight">
+        <span class="grid h-9 w-9 place-items-center rounded-full bg-ink text-sm text-paper">C/D</span>
+        <span>Context Driven<br class="sm:hidden"> Development</span>
+      </a>
+      <div class="hidden items-center gap-8 text-sm font-semibold md:flex">
+        <a class="transition hover:text-moss" href="#principles">Principles</a>
+        <a class="transition hover:text-moss" href="#process">Process</a>
+        <a class="transition hover:text-moss" href="#start">Get started</a>
+      </div>
+      <a href="#start" class="rounded-full bg-ink px-5 py-2.5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-moss">Read the guide</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="relative overflow-hidden px-6 pb-24 pt-16 lg:px-10 lg:pb-32 lg:pt-24">
+      <div class="grid-pattern absolute inset-0 -z-10 opacity-60"></div>
+      <div class="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-[1.15fr_.85fr]">
+        <div>
+          <p class="mb-6 inline-flex rounded-full border border-ink/20 bg-white/60 px-4 py-2 font-mono text-xs uppercase tracking-[0.18em]">Software decisions start here</p>
+          <h1 class="max-w-4xl text-5xl font-extrabold leading-[0.98] tracking-[-0.055em] sm:text-7xl lg:text-[6.4rem]">
+            Build for the<br><span class="text-moss">context</span>, not<br>the convention.
+          </h1>
+          <p class="mt-8 max-w-2xl text-lg leading-8 text-ink/70 sm:text-xl">Context Driven Development is a practical approach to building software around real users, actual constraints, and measurable outcomes—not borrowed best practices.</p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#principles" class="rounded-full bg-coral px-7 py-4 font-bold text-ink transition hover:-translate-y-1 hover:shadow-lg">Explore the principles</a>
+            <a href="#process" class="rounded-full border border-ink/25 bg-white/50 px-7 py-4 font-bold transition hover:border-ink hover:bg-white">See how it works ↓</a>
+          </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-lg">
+          <div class="rotate-2 rounded-[2rem] bg-ink p-7 text-white shadow-card sm:p-9">
+            <div class="mb-12 flex items-center justify-between font-mono text-xs uppercase tracking-widest text-white/50">
+              <span>Decision / 024</span><span class="h-2.5 w-2.5 rounded-full bg-lime"></span>
+            </div>
+            <p class="text-2xl font-bold leading-snug sm:text-3xl">“Should we use microservices?”</p>
+            <div class="my-8 h-px bg-white/15"></div>
+            <p class="mb-4 font-mono text-xs uppercase tracking-widest text-lime">Start with context</p>
+            <ul class="space-y-4 text-white/75">
+              <li class="flex gap-3"><span class="text-lime">01</span> What problem are we solving?</li>
+              <li class="flex gap-3"><span class="text-lime">02</span> What does our team know well?</li>
+              <li class="flex gap-3"><span class="text-lime">03</span> Which constraints are real today?</li>
+            </ul>
+            <p class="mt-10 rounded-2xl bg-white/10 p-5 text-sm leading-6 text-white/70">The right answer emerges from evidence. The pattern is secondary.</p>
+          </div>
+          <div class="absolute -bottom-8 -left-8 -z-10 h-36 w-36 rounded-full bg-lime"></div>
+          <div class="absolute -right-8 -top-8 -z-10 h-24 w-24 rounded-full border-[18px] border-coral"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="principles" class="bg-ink px-6 py-24 text-white lg:px-10 lg:py-32">
+      <div class="mx-auto max-w-7xl">
+        <div class="mb-16 grid gap-6 lg:grid-cols-2 lg:items-end">
+          <div>
+            <p class="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-lime">Core principles</p>
+            <h2 class="text-4xl font-extrabold tracking-[-0.04em] sm:text-6xl">No dogma.<br>Just good decisions.</h2>
+          </div>
+          <p class="max-w-xl text-lg leading-8 text-white/60 lg:justify-self-end">Frameworks are useful. Principles are durable. Use these to question assumptions and choose what fits the situation in front of you.</p>
+        </div>
+        <div class="grid gap-px overflow-hidden rounded-3xl bg-white/15 md:grid-cols-2 lg:grid-cols-4">
+          <article class="bg-ink p-8 transition hover:bg-white/[.04]">
+            <span class="font-mono text-sm text-coral">01</span>
+            <h3 class="mt-12 text-xl font-bold">Context over convention</h3>
+            <p class="mt-4 leading-7 text-white/55">Treat every “best practice” as a hypothesis, not a rule.</p>
+          </article>
+          <article class="bg-ink p-8 transition hover:bg-white/[.04]">
+            <span class="font-mono text-sm text-coral">02</span>
+            <h3 class="mt-12 text-xl font-bold">Outcomes over output</h3>
+            <p class="mt-4 leading-7 text-white/55">Measure whether the work helps, not simply whether it shipped.</p>
+          </article>
+          <article class="bg-ink p-8 transition hover:bg-white/[.04]">
+            <span class="font-mono text-sm text-coral">03</span>
+            <h3 class="mt-12 text-xl font-bold">Evidence over opinion</h3>
+            <p class="mt-4 leading-7 text-white/55">Make uncertainty visible and learn through small experiments.</p>
+          </article>
+          <article class="bg-ink p-8 transition hover:bg-white/[.04]">
+            <span class="font-mono text-sm text-coral">04</span>
+            <h3 class="mt-12 text-xl font-bold">Evolution over perfection</h3>
+            <p class="mt-4 leading-7 text-white/55">Choose the smallest sound step and adapt as reality changes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="px-6 py-24 lg:px-10 lg:py-32">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-14 lg:grid-cols-[.8fr_1.2fr]">
+          <div class="lg:sticky lg:top-12 lg:self-start">
+            <p class="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-moss">A simple loop</p>
+            <h2 class="text-4xl font-extrabold tracking-[-0.04em] sm:text-6xl">Understand.<br>Decide.<br>Learn.</h2>
+            <p class="mt-6 max-w-md text-lg leading-8 text-ink/65">CDD is not another heavyweight methodology. It is a repeatable way to bring the right information into each technical decision.</p>
+          </div>
+          <ol class="space-y-5">
+            <li class="group rounded-3xl border border-ink/10 bg-white/60 p-7 transition hover:-translate-y-1 hover:bg-white hover:shadow-card sm:p-10">
+              <div class="flex gap-6 sm:gap-10"><span class="font-mono text-coral">01</span><div><h3 class="text-2xl font-bold">Frame the situation</h3><p class="mt-3 leading-7 text-ink/60">Name the user need, business goal, technical landscape, constraints, and unknowns. Be specific about what is true now.</p></div></div>
+            </li>
+            <li class="group rounded-3xl border border-ink/10 bg-white/60 p-7 transition hover:-translate-y-1 hover:bg-white hover:shadow-card sm:p-10">
+              <div class="flex gap-6 sm:gap-10"><span class="font-mono text-coral">02</span><div><h3 class="text-2xl font-bold">Expose the trade-offs</h3><p class="mt-3 leading-7 text-ink/60">Compare viable options against the context. Record what each choice optimises, costs, and makes harder to change.</p></div></div>
+            </li>
+            <li class="group rounded-3xl border border-ink/10 bg-white/60 p-7 transition hover:-translate-y-1 hover:bg-white hover:shadow-card sm:p-10">
+              <div class="flex gap-6 sm:gap-10"><span class="font-mono text-coral">03</span><div><h3 class="text-2xl font-bold">Make a bounded decision</h3><p class="mt-3 leading-7 text-ink/60">Choose a direction for the current horizon—not forever. Set guardrails and define what would trigger a revisit.</p></div></div>
+            </li>
+            <li class="group rounded-3xl border border-ink/10 bg-white/60 p-7 transition hover:-translate-y-1 hover:bg-white hover:shadow-card sm:p-10">
+              <div class="flex gap-6 sm:gap-10"><span class="font-mono text-coral">04</span><div><h3 class="text-2xl font-bold">Close the learning loop</h3><p class="mt-3 leading-7 text-ink/60">Observe the outcome, share what changed, and feed the evidence into the next decision.</p></div></div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="start" class="px-6 pb-10 lg:px-10">
+      <div class="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-moss px-7 py-16 text-white sm:px-12 lg:px-20 lg:py-20">
+        <div class="grid items-center gap-10 lg:grid-cols-[1fr_auto]">
+          <div>
+            <p class="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-lime">Start small</p>
+            <h2 class="max-w-3xl text-4xl font-extrabold tracking-[-0.04em] sm:text-6xl">Bring context to your next decision.</h2>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-white/70">Pick one upcoming technical choice. Write down the problem, constraints, evidence, and trade-offs before discussing solutions.</p>
+          </div>
+          <a href="mailto:hello@example.com?subject=Context%20Driven%20Development" class="inline-flex items-center justify-center rounded-full bg-lime px-8 py-4 font-bold text-ink transition hover:-translate-y-1 hover:shadow-xl">Join the conversation ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-6 py-10 lg:px-10">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 border-t border-ink/10 pt-8 text-sm text-ink/50 sm:flex-row sm:items-center sm:justify-between">
+      <p>© 2026 Context Driven Development</p>
+      <p class="font-mono">Question assumptions. Document context. Keep learning.</p>
+    </div>
+  </footer>
+</body>
+</html>

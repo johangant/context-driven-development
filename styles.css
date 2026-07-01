@@ -1,0 +1,19 @@
+::selection {
+  background: #d9f99d;
+  color: #17201d;
+}
+
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(23, 32, 29, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 32, 29, 0.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black 55%, transparent 95%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
