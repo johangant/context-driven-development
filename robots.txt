@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://johangant.github.io/context-driven-development/sitemap.xml
+
