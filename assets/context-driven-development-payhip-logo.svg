@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="400" viewBox="0 0 1600 400" role="img" aria-labelledby="title description">
+  <title id="title">Context Driven Development</title>
+  <desc id="description">The Context Driven Development C slash D monogram and wordmark.</desc>
+  <rect width="1600" height="400" fill="#f4f1e8"/>
+  <circle cx="220" cy="200" r="92" fill="#17201d"/>
+  <text
+    x="220"
+    y="221"
+    fill="#f4f1e8"
+    font-family="Avenir Next, Avenir, Arial, sans-serif"
+    font-size="58"
+    font-weight="700"
+    letter-spacing="-3"
+    text-anchor="middle"
+  >C/D</text>
+  <text
+    x="365"
+    y="226"
+    fill="#17201d"
+    font-family="Avenir Next, Avenir, Arial, sans-serif"
+    font-size="78"
+    font-weight="700"
+    letter-spacing="-3"
+  >Context Driven Development</text>
+</svg>

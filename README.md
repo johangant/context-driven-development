@@ -30,7 +30,7 @@ The site has no build step and does not require server-side environment variable
 
 ## Checkout and consent
 
-The Payhip embed is loaded only after the visitor accepts optional cookies. The choice is stored in the browser for six months and can be changed through **Cookie settings** in the footer.
+The Payhip embed is loaded only after the visitor accepts optional cookies. The loader explicitly initialises Payhip after the window load event, protects Payhip's iframe query parameters from hash-based navigation, and provides retry and direct-product fallbacks if the embed fails. The choice is stored in the browser for six months and can be changed through **Cookie settings** in the footer.
 
 Update the Payhip product key and fallback product URL together in `cookie-consent.js` and `index.html` if the product changes.
 
@@ -43,4 +43,3 @@ The consent mechanism is a technical aid, not a substitute for maintaining suita
 ## Licence
 
 The site code is available under the MIT Licence. Branding, written content, images, and paid digital products are excluded and remain protected. See `LICENSE.txt`.
-
