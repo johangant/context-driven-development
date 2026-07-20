@@ -43,7 +43,14 @@
 }
 
 .checkout-consent {
-  min-width: min(100%, 22rem);
+  width: 100%;
+  min-width: 0;
+}
+
+.checkout-consent .payhip-embed-page,
+.checkout-consent iframe {
+  width: 100% !important;
+  max-width: none !important;
 }
 
 .noscript-checkout {
